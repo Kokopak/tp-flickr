@@ -1,0 +1,4 @@
+<div *ngIf="photo">
+  <h1 class="center">{{ photo?.title }}</h1>
+  <img [src]="getPhotoUrl()" (click)="photo=null" class="image" />
+</div>
